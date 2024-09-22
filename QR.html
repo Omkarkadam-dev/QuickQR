@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuickQR - QR Genrator</title>
+    <title>QuickQR - QR Generator</title>
     <link rel="stylesheet" href="QR.css">
 </head>
+
 <body>
+
+<h1>QUICKQR</h1>
+
     <div class="container">
         <p>Enter Your Text</p>
-        <input type="text" placeholder="Text or URL">
-        <button>Generate QR</button>
+        <input type="text" placeholder="Text or URL" id="qrtext">
+
+        <div class="imgbox">
+            <img src="" id="qrimage">
+        </div>
+
+        <button onclick="generateQR()">Generate QR</button>
     </div>
+
+    <script src="QR.js"></script>
 </body>
+
 </html>
